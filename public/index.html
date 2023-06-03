@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Remote Talk</title>
+    <meta name="description" content="Instant video meetings are just one click away !!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <script src="https://kit.fontawesome.com/6510466b6c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <navbar>
+        <div class="logo">Remote Talk</div>
+    </navbar>
+
+        <div class="main">
+            <div class="create-join">
+                <div class="text"><div class="head">Instant video meeting with just one click</div>
+                <div class="subtext">No SignUp. No payment.</div>
+                </div>
+                <button id="createroom" class="createroom-butt unselectable">New Meeting</button><br>
+                <input type="text" name="room" spellcheck="false" placeholder="Enter a Code" id="roomcode" class="roomcode"><br>
+                <div class="joinroom unselectable" id="joinroom">Join Meeting</div>
+            </div>
+            <div class="video-cont">
+                <video class="video-self" autoplay muted playsinline></video>
+                <div class="settings">
+                    <div class="device" id="mic"><i class="fas fa-microphone"></i></div>
+                    <div class="device" id="webcam"><i class="fas fa-video"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="social-footer" class="site-footer" role="contentinfo">
+            <div class="social-wrapper">
+              <ul>
+                <li>
+                    <a href="https://github.com/harshmange44" target="_blank">
+                      <i alt="GitHub Logo" class="github-icon fab fa-github"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://in.linkedin.com/in/harshmange" target="_blank">
+                      <i alt="LinkedIn Logo" class="linked-in-icon fab fa-linkedin"></i></a>
+                  </li>
+                <li>
+                  <a href="mailto:harshmange44@gmail.com" target="_blank">
+                    <i alt="Email Logo" class="email-icon fa fa-envelope"></i></a>
+                </li>
+                <li>
+                    <a href="https://harshmange.netlify.app" target="_blank">
+                      <i alt="Site Logo" class="dev-site-icon fa fa-globe"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/im.h_r_s_h" target="_blank">
+                      <i alt="Insta Logo" class="insta-icon fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          
+            <nav class="footer-nav" role="navigation">
+              <p>Copyright &copy; 2021 Harsh Mange. All rights reserved.</p>
+            </nav>
+          </footer>
+          <script language="JavaScript">
+            window.onload=function(){
+              var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+              if(mobile) {
+                alert("Visit this on a Computer/laptop for BETTER VIEW");
+              }
+            }
+          </script>
+
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8283912a-dee4-4cbf-b2a1-4248174c164d";
+        (function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";
+        s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+    </script>
+    <script src="js/landing.js"></script>
+</body>
+
+</html>
